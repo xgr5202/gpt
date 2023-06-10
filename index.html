@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>播放器</title>
+<!--  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>-->
+  <script src="./js/jquery.js"></script>
+  <script src="./js/style.js"></script>
+  <link href="./css/style.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<!-- 容器 -->
+<div class="container">
+  <!-- 播放器盒子 -->
+  <div class="musicbox">
+    <!-- 图片歌曲信息 -->
+    <div class="music-detail">
+      <!-- 图片 -->
+      <div class="music-img">
+      </div>
+      <!-- 歌曲信息 -->
+      <div class="music-info">
+      </div>
+    </div>
+    <!-- 相关操作 -->
+    <div class="music-control">
+      <!-- 进度条 -->
+      <div class="runningbox">
+        <div class="start">00:00</div>
+        <div class="running" onclick="changeProgress()">
+          <div class="running1">
+          </div>
+        </div>
+        <div class="end">00:00</div>
+      </div>
+      <div class="control">
+        <!-- 停止 -->
+        <span id="replay" class="iconfont" onclick="replayMusic()">&#xe680;</span>
+        <!-- 上一曲 -->
+        <span id="pre" class="iconfont" onclick="preMusic()">&#xe78a;</span>
+        <!-- 播放 -->
+        <span id="pause" class="iconfont" onclick="pauseMusic()">&#xea6d;</span>
+        <!-- 下一曲 -->
+        <span id="next" class="iconfont" onclick="nextMusic()">&#xe7a5;</span>
+        <!-- 音量 -->
+        <div class="vulme">
+          <span id="mute" class="iconfont" onclick="muteMusic()">&#xe600;</span>
+          <div class="vulmeBar">
+            <div class="vulmeBar1" onclick="changeVulme()"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
